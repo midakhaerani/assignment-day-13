@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haley Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/ef3fecafa4.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-image: url("images/contact.jpg");
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        
+        .contact {
+            box-sizing: border-box;
+            position: relative;
+            min-height: 100%;
+            padding: 0px 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .contact-container {
+            width: 100%;
+            display: flex;
+            margin-top: 20px;
+        }
+
+        .contact-container .contact-info {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            padding: 0 7rem 0 7rem;
+        }
+
+        .contact-container .form {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            padding: 0 7rem 0 7rem;
+        }
+
+        .box {
+            position: relative;
+            margin: 10px 0;
+        }
+
+        .text {
+            line-height: 10px;
+            font-weight: 500;
+        }
+
+        .contact-form {
+            width: 30%;
+            padding: 10px 40px 30px 40px;
+            border-radius: 10px;
+        }
+
+        .contact-form h2 {
+            font-size: 30px;
+            font-weight: 550;
+        }
+
+        .txt-field {
+            text-align: left;
+        }
+
+        .txt-field label {
+            font-size: 15px;;
+        }
+
+        input {
+            width: 100%;
+            height: 30px;
+            padding: 5px 0;
+            font-size: 16px;
+            margin: 5px 0;
+            border: none;
+            border-bottom: 2px solid #adadad;
+            outline: none;
+            resize: none;
+        }
+
+        textarea {
+            width: 100%;
+            height: 100px;
+            padding: 5px 0;
+            font-size: 16px;
+            margin: 5px 0;
+            border: none;
+            outline: none;
+            resize: none;
+        }
+
+        input[type="submit"] {
+            width: 40%;
+            height: 35px;
+            margin: 30px 0 0 0;
+            border: 1px solid;
+            background: #C84B31;
+            border-radius: 10px;
+            font-size: 16px;
+            color: #E9F4FB;
+            border: n;
+            font-weight: 500;
+            cursor: pointer;
+            outline: none;
+        }
+
+        input[type="submit"]:hover {
+            border-color: #C84B31;
+            transition: .5s;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/haleylogo.png" alt="Haley Model Management" />
+                </a>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href ="index.html">Home</a></li>
+                    <li><a href ="models.html">Models</a></li>
+                    <li><a href ="about.html">About</a></li>
+                    <li><a href ="apply.html">Apply</a></li>
+                    <li><a href ="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="main">
+            <h1 style="color: #C84B31; font-size: 50px;">Contact Us</h1>
+                <div class="contact">
+                    <div class="contact-container">
+                        <div class="contact-info">
+                            <div class="box">
+                                <div class="icon"><i class="fa-solid fa-location-dot fa-2xl"></i></div>
+                                <div class="text">
+                                    <h3>Address</h3>
+                                    <p>90 Bedford St, New York, NY 10014, USA</p>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="icon"><i class="fa-solid fa-phone fa-xl"></i></div>
+                                <div class="text">
+                                    <h3>Phone Number</h3>
+                                    <p>123-456-789</p>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="icon"><i class="fa-solid fa-envelope fa-xl"></i></div>
+                                <div class="text">
+                                    <h3>E-mail</h3>
+                                    <p>haley@info.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form">
+                            <form method="GET" action="apply.php">
+                                <h3>
+                                    <h3 style="color: #C84B31;"><strong>Send Message</strong></h3>
+                                    <div class="txt-field">
+                                        <label>Full Name</label>
+                                        <input type="text" required>
+                                        <span></span>
+                                        
+                                    </div>
+                                    <div class="txt-field">
+                                        <label>E-mail</label>
+                                        <input type="text" required>
+                                        <span></span>
+                                    </div>
+                                    <div class="txt-field">
+                                        <label>Message</label>
+                                        <textarea name="message" id="message" ></textarea>
+                                        <span></span>
+                                    </div>
+                                    <input type="submit" value="Submit" />
+                                </h3>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <div class="footer" style="position: absolute;">
+            <ul>
+                <li><a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li>
+                <li><a href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube fa-2xl"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
